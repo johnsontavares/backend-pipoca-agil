@@ -23,6 +23,7 @@
     MYSQL_USER=<usuario>
     MYSQL_PASSWORD=<senha>
     MYSQL_DB=<nome_schema>
+    JWT_SECRET=<chave_secreta>
      
    ```
 ### 🚩 Iniciando o Servidor local
@@ -46,11 +47,11 @@ Usando o Insomnia você poderá acessar/testar todas as rotas do servidor. Mas l
 ## 📚 Documentação do projeto
 Abaixo está a documentação da API/Endpoints do site
 
-## 🙎 User/Register
+## 🙎🔒 Auth/Register
 
 | Método | Funcionalidade                             | URL                                    |
 | ------ | -------------------------------------------| ---------------------------------------|
-| `POST` | Realiza o cadastro do usuário na aplicação | <https://localhost:3001/user/register> |
+| `POST` | Realiza o cadastro do usuário na aplicação | <https://localhost:3001/auth/register> |
 
 <details>
   <summary>A estrutura do <code>body</code> da requisição deverá seguir o padrão abaixo:</summary>
@@ -61,6 +62,7 @@ Abaixo está a documentação da API/Endpoints do site
   - `phone` (string, Obrigatório): Número de celular.
   - `dateOfBirth` (string, Obrigatório): Data de nascimento.
   - `password` (string, Obrigatório): Senha.
+  - `confirmPassword` (string, Obrigatório): Confirmação de Senha.
   - `role` (string, Opcional): Acesso do Usuário (default: 'user').
 
 ```http
@@ -72,6 +74,7 @@ Content-Type: application/json
   "phone": "+5511981997967",
   "dateOfBirth": "2000/06/29",
   "password": "Password123",
+  "confirmPassword": "Password123"
 }
 ```
 
