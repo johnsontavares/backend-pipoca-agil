@@ -72,7 +72,7 @@ Content-Type: application/json
 {
   "name": "Pipoca Rosa",
   "email": "pipoca@example.com",
-  "phone": "+5511981997967",
+  "phone": "11981997967",
   "dateOfBirth": "2000/06/29",
   "password": "Password123",
   "confirmPassword": "Password123"
