@@ -1,7 +1,8 @@
 # Backend - Pipoca Ágil
 
-## 🛠️🖥️ Pré-requisitos do Ambiente em sua máquina
+## 🛠️🖥️ Pré-requisitos do Ambiente em sua máquina.
 - Certifique-se de ter o Node.js instalado: [Node.js](https://nodejs.org/).
+- Intale o Yarn a partir da versão: [Yarn 1.22]([https://nodejs.org/](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable).
 - Garanta que possua um cliente de banco de dados: [MySQL Workbench](https://dev.mysql.com/downloads/) ou qualquer outro.
 - Para testar a utilização da API, utilize um cliente de API REST: [Insomnia](https://insomnia.rest/download) ou outro cliente que desejar.
 
@@ -30,13 +31,13 @@
 1. No terminal do projeto execute o comando para baixar todas as dependências do projeto:
    ```text
    
-   npm install
+   yarn install
    
    ```
 2. Inicie a aplicação executando o comando:
    ```text
    
-   npm run dev
+   yarn dev
    
    ```
   O servidor estará acessível em: http://localhost:3001  ou  `http://localhost:<porta_do_servidor>`
